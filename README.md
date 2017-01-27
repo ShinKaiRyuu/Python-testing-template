@@ -15,19 +15,19 @@
 ####Run tests:
 #####CLI:
 
-  from project directory run "behave features/"
-  see test report at ./test-results/report/index.html
+- from project directory run "behave features/"
+- see test report at ./test-results/report/index.html
 
 #####FROM PYCHARM(PRO ONLY):
-- Open Edit configuration dialogue
-- Add a new Behave configuration
-- Select as working directory 'feature' directory of this project
-- To run test select configuration and run it
-- Report will be in ide interface
+Open Edit configuration dialogue
+- add a new Behave configuration    
+- select as working directory 'feature' directory of this project
+- to run test select configuration and run it
+- report will be in ide interface
 
 
 ####PLANS:
-- v 1.0: All standart scenarios
-- v 2.0: Working with API
-- v 3.0: Vagrant+Docker
+- v 1.0: All basic scenarios(open page,click link,hover and etc.)
+- v 2.0: Working with API(auth,add stuff,delete)
+- v 3.0: Vagrant+Docker(virtualisation/containerisation of framework)
 - v 4.0: TODO
