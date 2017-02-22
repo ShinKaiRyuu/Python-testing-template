@@ -3,3 +3,4 @@ behave
 requests
 selenium
 webium
+bs4
