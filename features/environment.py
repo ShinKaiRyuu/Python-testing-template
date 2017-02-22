@@ -10,7 +10,7 @@ from helpers.driver_helpers import get_updated_driver
 def before_all(context):
 
     context.save_screenshots = True
-    context.close_after_all = False
+    context.close_after_all = True
     context.driver = get_updated_driver()
     context.app_url = APP_URL
 
