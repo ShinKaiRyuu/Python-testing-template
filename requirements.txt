@@ -5,3 +5,5 @@ selenium
 webium
 faker
 tweepy
+bs4
+PyVirtualDisplay
