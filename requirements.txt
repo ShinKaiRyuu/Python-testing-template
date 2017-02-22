@@ -1,5 +1,5 @@
 nose
-git+http://github.com/behave/behave
+behave
 requests
 selenium
 webium
