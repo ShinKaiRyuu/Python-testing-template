@@ -1,5 +1,7 @@
 nose
-behave
+git+http://github.com/behave/behave
 requests
 selenium
 webium
+faker
+tweepy
