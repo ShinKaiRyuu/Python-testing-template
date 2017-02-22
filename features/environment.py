@@ -1,4 +1,5 @@
 from datetime import datetime
+from sys import platform
 import ntpath
 
 from webium.driver import get_driver
@@ -8,7 +9,9 @@ from helpers.driver_helpers import get_updated_driver
 
 
 def before_all(context):
-
+    if 'linux' in platform:
+        from pyvirtualdisplay import Display
+        context.xvfb = Display(visible=0, size=(1366, 768)).start()
     context.save_screenshots = True
     context.close_after_all = True
     context.driver = get_updated_driver()
