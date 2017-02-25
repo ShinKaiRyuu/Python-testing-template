@@ -1,11 +1,16 @@
 language: python
 
 python:
+  - '3.3'
   - '3.4'
+  - '3.5'
+  - '3.6'
+  - '3.6'
+  - 'nightly'
 
 cache:
   directories:
-    - "$HOME/.pip-cache/"
+    - $HOME/.pip
 
 addons:
   firefox: latest
@@ -15,10 +20,9 @@ before_install:
   - mkdir geckodriver
   - tar -xzf geckodriver-v0.11.1-linux64.tar.gz -C geckodriver
   - export PATH=$PATH:$PWD/geckodriver
-  - pip install --upgrade pip
 
 install:
-  - pip install --egg -r requirements.txt --cache-dir $HOME/.pip-cache
+  - pip install -r requirements.txt
 
 script:
   behave features/
