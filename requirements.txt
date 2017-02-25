@@ -3,3 +3,5 @@ behave
 requests
 selenium
 webium
+bs4
+PyVirtualDisplay
