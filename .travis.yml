@@ -10,7 +10,7 @@ python:
 
 cache:
   directories:
-    - "$HOME/.pip-cache/"
+    - $HOME/.pip
 
 addons:
   firefox: latest
@@ -22,7 +22,7 @@ before_install:
   - export PATH=$PATH:$PWD/geckodriver
 
 install:
-  - pip install --egg -r requirements.txt --cache-dir $HOME/.pip-cache
+  - pip install -r requirements.txt
 
 script:
   behave features/
