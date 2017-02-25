@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/ShinKaiRyuu/Python-testing-template.svg?branch=master)](https://travis-ci.org/ShinKaiRyuu/Python-testing-template)
 # Python testing template
 
 ####Testing framework consist of:
