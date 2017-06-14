@@ -24,3 +24,6 @@ install:
 
 script:
   behave features/
+
+after_script:
+  codecov
