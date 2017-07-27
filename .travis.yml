@@ -16,7 +16,7 @@ addons:
 before_install:
   - sudo apt-add-repository ppa:yandex-qatools/allure-framework -y
   - sudo apt-get -qq update
-  - sudo apt-get install allure-commandline
+  - sudo apt-get install allure-commandline -y
   - wget https://github.com/mozilla/geckodriver/releases/download/v0.16.1/geckodriver-v0.16.1-linux64.tar.gz
   - mkdir geckodriver
   - tar -xzf geckodriver-v0.16.1-linux64.tar.gz -C geckodriver
@@ -29,8 +29,8 @@ install:
   - pip install -r requirements.txt
 
 script:
-  coverage run --source='.' -m behave -f allure_behave.formatter:AllureFormatter -o %allure_result_folder% features/
+  coverage run --source='.' -m behave -f allure_behave.formatter:AllureFormatter -o ./allure_report features/
 
 after_script:
   codecov
-  allure serve %allure_result_folder%
+  allure serve ./allure_report
