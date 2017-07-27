@@ -39,6 +39,8 @@ script:
 
 after_script:
   - codecov
+  - java -version
   - ./allure/allure-2.3/bin/allure --version
   - ls
   - ./allure/allure-2.3/bin/allure serve report
+  
