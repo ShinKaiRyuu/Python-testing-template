@@ -32,5 +32,5 @@ script:
   coverage run --source='.' -m behave -f allure_behave.formatter:AllureFormatter -o ./allure_report features/
 
 after_script:
-  codecov
-  allure serve ./allure_report
+  - codecov
+  - allure serve ./allure_report
