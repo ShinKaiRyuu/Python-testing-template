@@ -12,7 +12,10 @@ cache: pip
 
 addons:
   firefox: latest
-
+  apt:
+    packages:
+      - oracle-java8-set-default
+  
 before_install:
   - sudo apt-add-repository ppa:yandex-qatools/allure-framework -y
   - sudo apt-get -qq update
