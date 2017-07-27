@@ -29,8 +29,8 @@ install:
   - pip install -r requirements.txt
 
 script:
-  coverage run --source='.' -m behave -f allure_behave.formatter:AllureFormatter -o ./allure_report features/
+  coverage run --source='.' -m behave -f allure_behave.formatter:AllureFormatter -o report features/
 
 after_script:
   - codecov
-  - allure serve ./allure_report
+  - allure serve report
