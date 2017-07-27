@@ -19,8 +19,11 @@ before_install:
   - wget -O allure-2.3.tgz https://bintray.com/qameta/generic/download_file?file_path=io/qameta/allure/allure/2.3/allure-2.3.tgz
   - mkdir allure
   - tar -xzf allure-2.3.tgz -C allure
+  - ls
   - cd ./allure/allure-2.3/bin
-  - export PATH=$PATH:$PWD/allure
+  - ls
+  - cd ../../..
+  - export PATH=$PATH:$PWD/allure/allure-2.3/bin/allure
   
 
 
